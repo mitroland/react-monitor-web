@@ -1,0 +1,50 @@
+{
+  "name": "react-monitor",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.0",
+    "express-http-proxy": "^1.6.0",
+    "bulma": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "qs": "^6.9.0",
+    "formik": "^2.1.4",
+    "cheerio": "^1.0.0-rc.2",
+    "react-responsive-carousel": "^3.1.51",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies":{
+      "jest": "^24.9.0",
+      "nodemon": "^2.0.2",
+      "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev-client": "react-scripts start",
+    "dev-server": "nodemon server/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
